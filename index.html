@@ -2,31 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Anjali's Scratch Cards</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        #card { font-size: 24px; margin: 20px; }
-        button { padding: 10px 20px; font-size: 18px; cursor: pointer; }
-    </style>
+    <title>Anjali's Scratch Card Surprise</title>
 </head>
 <body>
-    <h1>🎁 Scratch to Reveal - Love from Anjali</h1>
-    <div id="card">Click the button to reveal a surprise!</div>
-    <button onclick="showNextCard()">Show Next Card</button>
-    <script>
-        let cardNum = 1;
-        function showNextCard() {
-            if (cardNum > 30) {
-                document.getElementById('card').innerText = 'All cards revealed! 🎉';
-            } else {
-                fetch(`card${cardNum}.txt`)
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('card').innerText = data;
-                        cardNum++;
-                    });
-            }
-        }
-    </script>
+    <h1>Surprise Cards for My Love 💖</h1>
+    <p>Click "Next" to reveal your surprises one by one!</p>
 </body>
 </html>
