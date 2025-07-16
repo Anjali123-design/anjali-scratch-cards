@@ -18,7 +18,7 @@
             if (cardNum > 30) {
                 document.getElementById('card').innerText = 'All cards revealed! 🎉';
             } else {
-                fetch(`card${cardNum}.txt`)
+                fetch(`card_${cardNum}.png`)
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById('card').innerText = data;
